@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavbarComponent: React.FC = () => {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar className="fixed-top" bg="light" variant="light">
       <Container>
         <Nav className="me-auto">
           <Nav.Link>

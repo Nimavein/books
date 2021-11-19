@@ -17,8 +17,8 @@ const routes: Route[] = [
     exact: true,
   },
   {
-    path: "/add",
-    name: "Creation Subpage",
+    path: "/order",
+    name: "Order Form",
     component: OrderForm,
     exact: true,
   },
