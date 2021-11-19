@@ -11,6 +11,7 @@ const CartItem: React.FC<Book> = (props) => {
       <Card.Body className="d-flex flex-column">
         <Card.Title> {props.title}</Card.Title>
         <Card.Text>{props.author}</Card.Text>
+        <Card.Text>{`${props.price} ${props.currency} `}</Card.Text>
         <Button
           className="mt-auto"
           onClick={() => dispatch(removeBookFromCart(props.id))}

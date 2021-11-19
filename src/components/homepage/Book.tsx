@@ -29,6 +29,7 @@ const BookComponent: React.FC<Book> = (props) => {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.author}</Card.Text>
         <Card.Text>{`Pages: ${props.pages}`}</Card.Text>
+        <Card.Text>{`${props.price} ${props.currency} `}</Card.Text>
         <Button
           className="mt-auto"
           disabled={isButtonDisabled}

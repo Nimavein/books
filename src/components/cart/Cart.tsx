@@ -3,9 +3,15 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
+import { Book } from "../../interfaces";
 
 const Cart: React.FC = () => {
   const { cart } = useSelector((state: RootState) => state.cart);
+
+  const cartTotalValue: number = cart.reduce(
+    (acc: any, obj: any) => acc + obj.price,
+    0
+  );
 
   return (
     <Container className="mt-5 d-flex flex-column">
@@ -18,6 +24,7 @@ const Cart: React.FC = () => {
           </Row>
           {cart.length > 0 && (
             <>
+              <h5 className="ms-auto">{`Cart total value: ${cartTotalValue} PLN`}</h5>
               <hr />
               <Link className="ms-auto w-50" to="/order">
                 <Button className="mb-4 w-100">CONTINUE</Button>
