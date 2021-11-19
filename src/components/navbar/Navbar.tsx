@@ -23,14 +23,6 @@ const NavbarComponent: React.FC = () => {
               Cart
             </Link>
           </Nav.Link>
-          <Nav.Link>
-            <Link
-              style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.55)" }}
-              to="/add"
-            >
-              Add
-            </Link>
-          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>

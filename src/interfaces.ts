@@ -28,3 +28,16 @@ export interface BooksState {
 export interface CartState {
   cart: Book[];
 }
+
+export interface NewOrder {
+  order: Order[];
+  first_name: string;
+  last_name: string;
+  city: string;
+  zip_code: string;
+}
+
+export interface Order {
+  id: number;
+  quantity: number;
+}
