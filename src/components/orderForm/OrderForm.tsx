@@ -64,6 +64,7 @@ const OrderForm: React.FC = () => {
             type="text"
             placeholder="Enter your first name"
             {...register("first_name")}
+            minLength={4}
             required
             name="first_name"
           />
@@ -74,6 +75,7 @@ const OrderForm: React.FC = () => {
             type="text"
             placeholder="Enter your last name"
             {...register("last_name")}
+            minLength={5}
             required
             name="last_name"
           />
@@ -101,11 +103,11 @@ const OrderForm: React.FC = () => {
         </Form.Group>
         {isSuccessfullySubmited ? (
           <Button variant="success" type="submit">
-            SUBMITTED SUCCESSFULLY
+            ORDERED SUCCESSFULLY
           </Button>
         ) : (
           <Button variant="primary" type="submit">
-            SUBMIT
+            ORDER AND PAY
           </Button>
         )}
       </Form>
