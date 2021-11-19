@@ -24,3 +24,7 @@ export interface BooksState {
   books: Book[] | undefined;
   status: string | null;
 }
+
+export interface CartState {
+  cart: Book[];
+}

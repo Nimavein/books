@@ -12,7 +12,7 @@ const NavbarComponent: React.FC = () => {
               style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.55)" }}
               to="/"
             >
-              Products
+              Home
             </Link>
           </Nav.Link>
           <Nav.Link>
@@ -20,7 +20,7 @@ const NavbarComponent: React.FC = () => {
               style={{ textDecoration: "none", color: "rgba(0, 0, 0, 0.55)" }}
               to="/cart"
             >
-              Categories
+              Cart
             </Link>
           </Nav.Link>
           <Nav.Link>
