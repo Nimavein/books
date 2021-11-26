@@ -101,15 +101,13 @@ const OrderForm: React.FC = () => {
             pattern="[0-9]{2}-[0-9]{3}"
           />
         </Form.Group>
-        {isSuccessfullySubmited ? (
-          <Button variant="success" type="submit">
-            ORDERED SUCCESSFULLY
-          </Button>
-        ) : (
-          <Button variant="primary" type="submit">
-            ORDER AND PAY
-          </Button>
-        )}
+
+        <Button
+          variant={isSuccessfullySubmited ? "success" : "primary"}
+          type="submit"
+        >
+          {isSuccessfullySubmited ? "ORDERED SUCCESSFULLY" : "ORDER AND PAY"}
+        </Button>
       </Form>
     </Container>
   );
